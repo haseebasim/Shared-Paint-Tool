@@ -36,11 +36,7 @@ class Board extends React.Component {
     this.drawOnCanvas();
   }
 
-  //   static getDerivedStateFromProps(nextProps, prevState) {
-  //     if (nextProps.strokeStyle !== prevState.strokeStyle) {
-  //       return { someState: nextProps.someValue };
-  //     } else return null;
-  //   }
+  
 
   componentWillReceiveProps(newProps) {
       this.ctx.strokeStyle = newProps.color;
